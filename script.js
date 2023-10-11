@@ -104,3 +104,30 @@ function dividebyFunction(e){
     input.value = inputValeur;
     calcul.textContent = textInput;
 }
+
+sign.addEventListener('click', signFunction);
+
+function signFunction(){
+    inputValeur = parseFloat(inputValeur) * -1;
+    textInput = inputValeur.toString();
+    input.value = inputValeur;
+    calcul.textContent = textInput
+}
+
+percentage.addEventListener('click', percentageFunction);
+
+function percentageFunction(e){
+    e.preventDefault()
+    inputValeur = parseFloat(inputValeur) / 100;
+    textInput = inputValeur.toString();
+    input.value = inputValeur;
+    calcul.textContent = textInput;
+}
+
+equals.addEventListener('click', equalsFunction)
+
+function equalsFunction(e){
+    e.preventDefault();
+    let result = textInput
+    calcul.textContent = textInput+ ' = ' + eval(result)
+}
