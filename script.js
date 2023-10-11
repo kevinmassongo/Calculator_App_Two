@@ -28,3 +28,21 @@ buttons.forEach((button)=>{
         calcul.textContent = textInput;
     })
 })
+
+reset.addEventListener('click', resetFunction)
+
+function resetFunction(){
+    inputValeur = '';
+    textInput = '';
+    input.value = inputValeur;
+    calcul.textContent = textInput;
+}
+
+clear.addEventListener('click', clearFunction)
+
+function clearFunction(){
+    inputValeur = inputValeur.slice(0, -2);
+    textInput= inputValeur;
+    input.value = inputValeur;
+    calcul.textContent = textInput;
+}
