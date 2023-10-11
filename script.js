@@ -54,6 +54,8 @@ function clearFunction(){
     calcul.textContent = textInput;
 }
 
+//add a click event handler to all arithmetic operator buttons
+
 plus.addEventListener('click', plusFunction)
 
 function plusFunction(e){
