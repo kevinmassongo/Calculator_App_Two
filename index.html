@@ -8,6 +8,90 @@
     <title>Calculatrice</title>
 </head>
 <body>
-    
+    <div class="container">
+        <form action="">
+          <div>
+            <!-- TODO: enlever le texte dans ce paragraphe et la valeur de #input ci dessous -->
+            <p class="text-right tex-white" id="calcul"></p>
+          </div>
+          <div>
+            <input
+              class="text-right text-1 text-right w-max p-15"
+              name="userInput"
+              type="text"
+              value=""
+              id="input"
+              onblur="this.focus()"
+              maxlength="10"
+              autofocus
+            />
+          </div>
+          <div>
+            <div class="buttons">
+              <div>
+                <button type="reset" class="danger" id="reset">AC</button>
+              </div>
+              <div>
+                <button type="button" class="secondary" id="clear">C</button>
+              </div>
+              <div>
+                <button type="button" class="secondary" id="plusoumoins">+/-</button>
+              </div>
+              <div>
+                <button type="submit" class="secondary" id="percentage">%</button>
+              </div>
+  
+              <div>
+                <button type="submit" id="divideby">÷</button>
+              </div>
+              <div>
+                <button type="button" class="numpad digit">7</button>
+              </div>
+              <div>
+                <button type="button" class="numpad digit">8</button>
+              </div>
+              <div>
+                <button type="button" class="numpad digit">9</button>
+              </div>
+              <div>
+                <button type="submit" id="times">×</button>
+              </div>
+              <div>
+                <button type="button" class="numpad digit">4</button>
+              </div>
+              <div>
+                <button type="button" class="numpad digit">5</button>
+              </div>
+              <div>
+                <button type="button" class="numpad digit">6</button>
+              </div>
+              <div>
+                <button type="submit" id="minus">-</button>
+              </div>
+              <div>
+                <button type="button" class="numpad digit">1</button>
+              </div>
+              <div>
+                <button type="button" class="numpad digit">2</button>
+              </div>
+              <div>
+                <button type="button" class="numpad digit">3</button>
+              </div>
+              <div>
+                <button type="submit" id="plus">+</button>
+              </div>
+              <div>
+                <button type="button" class="numpad dot">.</button>
+              </div>
+              <div>
+                <button type="button" class="numpad digit">0</button>
+              </div>
+              <div>
+                <button type="submit" id="equals">=</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
 </body>
 </html>
